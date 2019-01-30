@@ -63,6 +63,7 @@ body {
 .pig {
     position: relative;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     color: #4d2d2d;
     font-family: "ZoomlaXingtiJ3",
@@ -73,7 +74,7 @@ body {
     font-size: 1.5rem;
 }
 
-.pig .imgbg{
+.pig .imgbg {
     background: url(../img/pigBg.png) no-repeat;
     background-size: 100% 100%;
 }
@@ -83,13 +84,13 @@ body {
         font-size: 1rem;
     }
 
-    .pig .imgbg{
+    .pig .imgbg {
         background: none;
     }
 
-    .pig .imgbg-mobile{
-    background: url(../img/pigBg.png) no-repeat;
-        background-size:contain;
+    .pig .imgbg-mobile {
+        background: url(../img/pigBg.png) no-repeat;
+        background-size: contain;
     }
 }
 
@@ -113,7 +114,7 @@ body {
     padding: 5rem 0;
 }
 
-.pig article p{
+.pig article p {
     width: 1.5rem;
     text-shadow: 1px 1px 2px #cc7c7c;
     margin: 0 10px;
@@ -140,7 +141,7 @@ body {
     bottom: 85%;
 }
 
-@keyframes musicrotate {
+@-webkit-keyframes musicrotate {
     to {
         transform: translateY(-25%) rotate(-360deg);
         -webkit-transform: translateY(-25%) rotate(-360deg);
@@ -150,7 +151,7 @@ body {
     }
 }
 
-@-webkit-keyframes musicrotate{
+@keyframes musicrotate {
     to {
         transform: translateY(-25%) rotate(-360deg);
         -webkit-transform: translateY(-25%) rotate(-360deg);
