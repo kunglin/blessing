@@ -150,6 +150,16 @@ body {
     }
 }
 
+@-webkit-keyframes musicrotate{
+    to {
+        transform: translateY(-25%) rotate(-360deg);
+        -webkit-transform: translateY(-25%) rotate(-360deg);
+        -moz-transform: translateY(-25%) rotate(-360deg);
+        -ms-transform: translateY(-25%) rotate(-360deg);
+        -o-transform: translateY(-25%) rotate(-360deg);
+    }
+}
+
 .btn-audio i {
     position: relative;
     top: 25%;
@@ -161,6 +171,6 @@ body {
 }
 
 .btn-audio i.fa-music {
-    animation: musicrotate 1.5s infinite reverse linear;
+    animation: musicrotate 3s infinite reverse linear;
     -webkit-animation: musicrotate 3s infinite reverse linear;
 }
