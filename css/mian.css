@@ -1,0 +1,153 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container-fluid {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media only screen and (min-width:992px) {
+    .container-fluid {
+        background: url(../img/desktopBgc.png) no-repeat left top #fafafa;
+        background-size: 100% 100%;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .container-fluid {
+        background: url(../img/padBgc.png) no-repeat center #d34848;
+        background-size: 100% 100%;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .container-fluid {
+        background: url(../img/mobileBgc.png) no-repeat left top #d34848;
+        background-size: 100% 100%;
+    }
+}
+
+@font-face {
+    font-family: 'ZoomlaXingtiJ3';
+    src: url('https://code.z01.com/font/ZoomlaXingtiJ3.eot?#iefix');
+    /* IE9 */
+    src: url('https://code.z01.com/font/ZoomlaXingtiJ3.eot?#iefix') format("embedded-opentype"),
+        /* IE6-IE8 */
+        url('https://code.z01.com/font/ZoomlaXingtiJ3.woff') format("woff"),
+        /* chrome、firefox */
+        url('https://code.z01.com/font/ZoomlaXingtiJ3.ttf') format("truetype"),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+        url("http://code.z01.com/font/ZoomlaXingtiJ3.svg#ZoomlaXingtiJ3") format("svg");
+    /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+.company {
+    font-family: "ZoomlaXingtiJ3",
+        “Hiragino Sans GB”,
+        “Microsoft YaHei”,
+        “WenQuanYi Micro Hei”,
+        sans-serif;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-left: 5px solid #4d2d2d;
+    border-right: 5px solid #4d2d2d;
+    position: relative;
+    top: 20%;
+}
+
+.pig {
+    position: relative;
+    top: 50%;
+    
+    transform: translateY(-50%);
+    color: #4d2d2d;
+    font-family: "ZoomlaXingtiJ3",
+        “Hiragino Sans GB”,
+        “Microsoft YaHei”,
+        “WenQuanYi Micro Hei”,
+        sans-serif;
+    font-size: 1.5rem;
+}
+
+.pig .imgbg{
+    background: url(../img/pigBg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.pig .imgbg div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.left-couplet,
+.right-couplet {
+    background: url(../img/couplet.png) no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    height: 20rem;
+    font-size: 1.5rem;
+    padding: 5rem 0;
+}
+
+.pig article p{
+    width: 1.5rem;
+    text-shadow: 1px 1px 2px #cc7c7c;
+    margin: 0 10px;
+}
+
+.btn-audio {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid #cc7c7c;
+    text-align: center;
+    transform: 30deg;
+    -webkit-transform: 30deg;
+    -moz-transform: 30deg;
+    -ms-transform: 30deg;
+    -o-transform: 30deg;
+    position: absolute;
+    left: 12%;
+    bottom: 85%;
+}
+
+@keyframes musicrotate {
+    to {
+        transform: translateY(-25%) rotate(-360deg);
+        -webkit-transform: translateY(-25%) rotate(-360deg);
+        -moz-transform: translateY(-25%) rotate(-360deg);
+        -ms-transform: translateY(-25%) rotate(-360deg);
+        -o-transform: translateY(-25%) rotate(-360deg);
+    }
+}
+
+.btn-audio i {
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%);
+    -webkit-transform: translateY(-25%);
+    -moz-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    -o-transform: translateY(-25%);
+}
+
+.btn-audio i.fa-music {
+    animation: musicrotate 1.5s infinite reverse linear;
+    -webkit-animation: musicrotate 3s infinite reverse linear;
+}
