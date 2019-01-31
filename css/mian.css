@@ -60,6 +60,27 @@ body {
     top: 17%;
 }
 
+@keyframes companytext{
+    0%,
+    100% {
+        text-shadow: 2px 0px 1px #cc7c7c,
+        2px 0px 1px #cc7c7c,
+        2px 0px 1px #cc7c7c,
+        2px 0px 1px #cc7c7c;
+    }
+
+    50% {
+        text-shadow: -2px 0px 1px #cc7c7c,
+        -2px 0px 1px #cc7c7c,
+        -2px 0px 1px #cc7c7c,
+        -2px 0px 1px #cc7c7c;
+    }
+}
+
+.company p{
+    animation: companytext 2s ease infinite;
+}
+
 .pig {
     position: relative;
     top: 50%;
