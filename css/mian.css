@@ -60,24 +60,44 @@ body {
     top: 17%;
 }
 
-@keyframes companytext{
+@-webkit-keyframes companytext {
+
     0%,
     100% {
         text-shadow: 2px 0px 1px #cc7c7c,
-        2px 0px 1px #cc7c7c,
-        2px 0px 1px #cc7c7c,
-        2px 0px 1px #cc7c7c;
+            2px 0px 1px #cc7c7c,
+            2px 0px 1px #cc7c7c,
+            2px 0px 1px #cc7c7c;
     }
 
     50% {
         text-shadow: -2px 0px 1px #cc7c7c,
-        -2px 0px 1px #cc7c7c,
-        -2px 0px 1px #cc7c7c,
-        -2px 0px 1px #cc7c7c;
+            -2px 0px 1px #cc7c7c,
+            -2px 0px 1px #cc7c7c,
+            -2px 0px 1px #cc7c7c;
     }
 }
 
-.company p{
+@keyframes companytext {
+
+    0%,
+    100% {
+        text-shadow: 2px 0px 1px #cc7c7c,
+            2px 0px 1px #cc7c7c,
+            2px 0px 1px #cc7c7c,
+            2px 0px 1px #cc7c7c;
+    }
+
+    50% {
+        text-shadow: -2px 0px 1px #cc7c7c,
+            -2px 0px 1px #cc7c7c,
+            -2px 0px 1px #cc7c7c,
+            -2px 0px 1px #cc7c7c;
+    }
+}
+
+.company p {
+    -webkit-animation: companytext 2s ease infinite;
     animation: companytext 2s ease infinite;
 }
 
